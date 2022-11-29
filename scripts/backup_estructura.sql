@@ -245,7 +245,7 @@ ALTER TABLE ONLY public."Usuario"
 -- Name: Orden_producto Orden_fk; Type: FK CONSTRAINT; Schema: public; Owner: grupo5
 --
 
-ALTER TABLE ONLY public."Orden_producto"
+ALTER TABLE ONLY public."Orden_Producto"
     ADD CONSTRAINT "Orden_fk" FOREIGN KEY ("Orden_id") REFERENCES public."Orden"("Orden_id");
 
 
@@ -263,7 +263,7 @@ ALTER TABLE ONLY public."PC_Armado_Producto"
 -- Name: Orden_producto Producto_fk; Type: FK CONSTRAINT; Schema: public; Owner: grupo5
 --
 
-ALTER TABLE ONLY public."Orden_producto"
+ALTER TABLE ONLY public."Orden_Producto"
     ADD CONSTRAINT "Producto_fk" FOREIGN KEY ("Producto_id") REFERENCES public."Producto"("Producto_id");
 
 

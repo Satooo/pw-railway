@@ -411,6 +411,7 @@ app.post("/resena",async(req,resp)=>{
 
     const resenaid=crypto.randomUUID()
     if(resenadata.length>0){
+        console.log(resenadata)
         await Resena.create({
             Resena_id:`${resenaid}`,
             Usuario_id:`${userid}`,
