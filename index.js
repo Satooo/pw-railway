@@ -193,14 +193,15 @@ app.post("/orden",async(req,resp)=>{
     const Delete= req.query.delete
     
     if(Delete=="true"){
-        await Orden.destroy({
-            where:{},
-            //truncate:true
-        })
         await Orden_Producto.destroy({
             where:{},
             //truncate:true
         })
+        await Orden.destroy({
+            where:{},
+            //truncate:true
+        })
+        
     }
     if(Delete==undefined){
     const Productos = req.body.possibleCheckoutItems.list
