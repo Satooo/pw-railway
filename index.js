@@ -195,11 +195,11 @@ app.post("/orden",async(req,resp)=>{
     if(Delete=="true"){
         await Orden.destroy({
             where:{},
-            truncate:true
+            //truncate:true
         })
         await Orden_Producto.destroy({
             where:{},
-            truncate:true
+            //truncate:true
         })
     }
     if(Delete==undefined){
