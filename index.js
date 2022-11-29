@@ -408,7 +408,7 @@ app.post("/reporte",async(req,resp)=>{
 app.post("/resena",async(req,resp)=>{
     const resenadata = req.body.list.list
     const userid=req.body.userid
-
+    console.log(resenadata)
     const resenaid=crypto.randomUUID()
     if(resenadata.length>0){
         console.log(resenadata)
